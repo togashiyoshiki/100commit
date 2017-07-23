@@ -91,11 +91,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LwZ-QT-VBP">
-                                                <rect key="frame" x="0.0" y="91" width="375" height="92"/>
+                                                <rect key="frame" x="1" y="91" width="375" height="92"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date1:" destination="YJd-Kh-3zG" eventType="valueChanged" id="L6q-iD-8gT"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ブレイクタイム" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RfU-X0-J8u">
                                                 <rect key="frame" x="8" y="191" width="359" height="30"/>
@@ -110,6 +113,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date2:" destination="YJd-Kh-3zG" eventType="valueChanged" id="sFa-w2-Cox"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ブレックファースト" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGm-Ri-8EC">
                                                 <rect key="frame" x="8" y="329" width="359" height="30"/>
@@ -124,6 +130,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date3:" destination="YJd-Kh-3zG" eventType="valueChanged" id="lcA-an-AeZ"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="通勤" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2n-SA-VDf">
                                                 <rect key="frame" x="8" y="467" width="359" height="30"/>
@@ -138,6 +147,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date4:" destination="YJd-Kh-3zG" eventType="valueChanged" id="xtx-ek-WcB"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="仕事" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZG-86-IuN">
                                                 <rect key="frame" x="8" y="605" width="359" height="30"/>
@@ -152,6 +164,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date5:" destination="YJd-Kh-3zG" eventType="valueChanged" id="M9i-Mi-By2"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ランチ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6g-yI-Mrw">
                                                 <rect key="frame" x="8" y="743" width="359" height="30"/>
@@ -166,6 +181,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date6:" destination="YJd-Kh-3zG" eventType="valueChanged" id="ofA-Ol-F35"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="仕事" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gg6-rH-otA">
                                                 <rect key="frame" x="8" y="881" width="359" height="30"/>
@@ -180,6 +198,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date7:" destination="YJd-Kh-3zG" eventType="valueChanged" id="UdD-aI-qKI"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="帰宅" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Br9-4T-XFF">
                                                 <rect key="frame" x="8" y="1019" width="359" height="30"/>
@@ -194,6 +215,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date8:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Viw-OK-vPS"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コミット" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09W-V2-tNJ">
                                                 <rect key="frame" x="8" y="1157" width="359" height="30"/>
@@ -208,6 +232,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date9:" destination="YJd-Kh-3zG" eventType="valueChanged" id="5hE-Wb-ffb"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ディナー" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IM4-en-nf6">
                                                 <rect key="frame" x="8" y="1295" width="359" height="30"/>
@@ -222,6 +249,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date10:" destination="YJd-Kh-3zG" eventType="valueChanged" id="sqs-NI-UYB"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ブレイクタイム" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBW-mA-jOB">
                                                 <rect key="frame" x="8" y="1433" width="359" height="30"/>
@@ -236,6 +266,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date11:" destination="YJd-Kh-3zG" eventType="valueChanged" id="SM5-AV-yxo"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コミット" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-wi-6cf">
                                                 <rect key="frame" x="8" y="1571" width="359" height="30"/>
@@ -250,6 +283,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date12:" destination="YJd-Kh-3zG" eventType="valueChanged" id="cYl-BG-KdX"/>
+                                                </connections>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="就寝時間" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94G-z7-5m7">
                                                 <rect key="frame" x="8" y="1709" width="359" height="30"/>
@@ -264,6 +300,9 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="522521078.68287802">
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
+                                                <connections>
+                                                    <action selector="Date13:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Xdq-A4-fnQ"/>
+                                                </connections>
                                             </datePicker>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -309,6 +348,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJ6-WN-M6d">
                                 <rect key="frame" x="321" y="17" width="31" height="30"/>
                                 <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="addBtn:" destination="YJd-Kh-3zG" eventType="touchUpInside" id="ONV-Gm-jQc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

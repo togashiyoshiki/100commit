@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32B19421F24E1B10053F343 /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B19411F24E1B10053F343 /* historyViewController.swift */; };
+		C32B19441F24E1E50053F343 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B19431F24E1E50053F343 /* SettingViewController.swift */; };
+		C32B19461F24E2080053F343 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B19451F24E2080053F343 /* inputViewController.swift */; };
 		C3850F381F1DB070008405E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3850F371F1DB070008405E2 /* AppDelegate.swift */; };
 		C3850F3A1F1DB070008405E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3850F391F1DB070008405E2 /* ViewController.swift */; };
 		C3850F3D1F1DB070008405E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3850F3B1F1DB070008405E2 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C32B19411F24E1B10053F343 /* historyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
+		C32B19431F24E1E50053F343 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C32B19451F24E2080053F343 /* inputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
 		C3850F341F1DB070008405E2 /* 100commit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100commit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3850F371F1DB070008405E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3850F391F1DB070008405E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				C3850F371F1DB070008405E2 /* AppDelegate.swift */,
 				C3850F391F1DB070008405E2 /* ViewController.swift */,
 				C3850F3B1F1DB070008405E2 /* Main.storyboard */,
+				C32B19451F24E2080053F343 /* inputViewController.swift */,
+				C32B19431F24E1E50053F343 /* SettingViewController.swift */,
+				C32B19411F24E1B10053F343 /* historyViewController.swift */,
 				C3850F3E1F1DB070008405E2 /* Assets.xcassets */,
 				C3850F401F1DB070008405E2 /* LaunchScreen.storyboard */,
 				C3850F431F1DB070008405E2 /* Info.plist */,
@@ -264,6 +273,9 @@
 			files = (
 				C3850F3A1F1DB070008405E2 /* ViewController.swift in Sources */,
 				C3850F381F1DB070008405E2 /* AppDelegate.swift in Sources */,
+				C32B19461F24E2080053F343 /* inputViewController.swift in Sources */,
+				C32B19421F24E1B10053F343 /* historyViewController.swift in Sources */,
+				C32B19441F24E1E50053F343 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +528,7 @@
 				C3850F5E1F1DB071008405E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3850F5F1F1DB071008405E2 /* Build configuration list for PBXNativeTarget "100commitTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				C3850F611F1DB071008405E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3850F621F1DB071008405E2 /* Build configuration list for PBXNativeTarget "100commitUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				C3850F641F1DB071008405E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -304,32 +304,27 @@
                                                     <action selector="Date13:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Xdq-A4-fnQ"/>
                                                 </connections>
                                             </datePicker>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="１日のスケジュール" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-ah-5lr">
+                                                <rect key="frame" x="8" y="7" width="367" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2000" id="vDz-T9-Cw4"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一日のスケジュール" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-bV-7nC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
-                                        <color key="backgroundColor" red="0.92159152030000002" green="0.92155694960000001" blue="0.92158031460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="8x3-op-5pk"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="tb1-bV-7nC" firstAttribute="top" secondItem="Z6F-9L-ndL" secondAttribute="top" id="3Hh-rl-gls"/>
-                                    <constraint firstItem="tb1-bV-7nC" firstAttribute="leading" secondItem="6jL-hO-oZa" secondAttribute="leading" id="731-yI-8cE"/>
-                                    <constraint firstAttribute="trailing" secondItem="tb1-bV-7nC" secondAttribute="trailing" id="EC0-f6-J8a"/>
-                                    <constraint firstItem="tb1-bV-7nC" firstAttribute="centerX" secondItem="Z6F-9L-ndL" secondAttribute="centerX" id="OLM-mJ-bBv"/>
-                                    <constraint firstItem="tb1-bV-7nC" firstAttribute="leading" secondItem="Z6F-9L-ndL" secondAttribute="leading" id="QtO-MU-DcA"/>
+                                    <constraint firstItem="6jL-hO-oZa" firstAttribute="leading" secondItem="Z6F-9L-ndL" secondAttribute="leading" id="8Na-jP-JkJ"/>
                                     <constraint firstItem="6jL-hO-oZa" firstAttribute="top" secondItem="Z6F-9L-ndL" secondAttribute="topMargin" id="U6C-C6-n9n"/>
                                     <constraint firstAttribute="bottom" secondItem="6jL-hO-oZa" secondAttribute="bottom" constant="-8" id="Wjg-ue-HLe"/>
-                                    <constraint firstItem="tb1-bV-7nC" firstAttribute="trailing" secondItem="6jL-hO-oZa" secondAttribute="trailing" id="iMz-Mu-U5A"/>
+                                    <constraint firstItem="6jL-hO-oZa" firstAttribute="centerX" secondItem="Z6F-9L-ndL" secondAttribute="centerX" id="YUQ-pP-2Us"/>
+                                    <constraint firstAttribute="trailing" secondItem="6jL-hO-oZa" secondAttribute="trailing" id="wv8-RJ-mY3"/>
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100時間コミット" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyh-lL-KZc">
@@ -350,8 +345,16 @@
                                 <state key="normal" title="保存"/>
                                 <connections>
                                     <action selector="addBtn:" destination="YJd-Kh-3zG" eventType="touchUpInside" id="ONV-Gm-jQc"/>
+                                    <segue destination="H32-cd-1wG" kind="showDetail" id="EmH-fV-qgD"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コミット名の入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzb-cc-BhJ">
+                                <rect key="frame" x="1" y="55" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -403,6 +406,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16y-NV-CKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2149.5999999999999" y="138.53073463268368"/>
+        </scene>
+        <!--Commit View View Controller-->
+        <scene sceneID="4A9-ui-Ji6">
+            <objects>
+                <viewController id="H32-cd-1wG" customClass="CommitViewViewController" customModule="_00commit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="veO-Xw-pPD"/>
+                        <viewControllerLayoutGuide type="bottom" id="J1c-kk-mfD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iXA-Eb-W5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beC-PF-hO0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug5-mh-oNM">
+                                        <rect key="frame" x="0.0" y="8" width="375" height="2000"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2000" id="FmW-Dl-LfC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ug5-mh-oNM" firstAttribute="leading" secondItem="beC-PF-hO0" secondAttribute="leading" id="dfB-CA-f7Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="ug5-mh-oNM" secondAttribute="trailing" id="hLh-6r-9cK"/>
+                                    <constraint firstAttribute="bottom" secondItem="ug5-mh-oNM" secondAttribute="bottom" constant="-8" id="k2J-OO-etX"/>
+                                    <constraint firstItem="ug5-mh-oNM" firstAttribute="centerX" secondItem="beC-PF-hO0" secondAttribute="centerX" id="yJ0-HE-Zha"/>
+                                    <constraint firstItem="ug5-mh-oNM" firstAttribute="top" secondItem="beC-PF-hO0" secondAttribute="topMargin" id="yuj-uS-icW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="beC-PF-hO0" firstAttribute="top" secondItem="iXA-Eb-W5N" secondAttribute="top" id="R49-up-1KN"/>
+                            <constraint firstAttribute="trailing" secondItem="beC-PF-hO0" secondAttribute="trailing" id="ele-Qp-eFM"/>
+                            <constraint firstItem="beC-PF-hO0" firstAttribute="bottom" secondItem="J1c-kk-mfD" secondAttribute="top" id="fPk-qX-Q7K"/>
+                            <constraint firstItem="beC-PF-hO0" firstAttribute="leading" secondItem="iXA-Eb-W5N" secondAttribute="leading" id="gIo-o4-Ex9"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KE-3e-vPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3095" y="139"/>
         </scene>
         <!--過去の履歴-->
         <scene sceneID="UN4-81-eQd">

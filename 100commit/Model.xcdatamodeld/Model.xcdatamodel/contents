@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Commit" representedClassName=".Commit" syncable="YES">
+        <attribute name="item1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nowTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetTime1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Commit" positionX="-63" positionY="-18" width="128" height="465"/>
+    </elements>
+</model>

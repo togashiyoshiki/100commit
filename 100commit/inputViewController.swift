@@ -34,7 +34,6 @@ class inputViewController: UIViewController{
     var time11:String = ""
     var time12:String = ""
     var time13:String = ""
-
 //MARK:部品　Text
     
     @IBOutlet weak var TextField1: UITextField!
@@ -146,6 +145,8 @@ class inputViewController: UIViewController{
     
 //    MARK:追加ボタンの処理
     @IBAction func addBtn(_ sender: UIButton) {
+        var now = Date()
+        
 //        MARK:入力文字を代入
          textKind1 = TextField1.text!
          textKind2 = TextField2.text!
@@ -190,6 +191,12 @@ class inputViewController: UIViewController{
             print(time11)
             print(time12)
             print(time13)
+        
+        ///現在時刻の表示
+        print(now)
+        
+        
+        
         
     }
     

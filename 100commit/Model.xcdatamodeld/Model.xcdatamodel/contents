@@ -28,9 +28,22 @@
         <attribute name="targetTime11" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="targetTime12" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="targetTime13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime111" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime222" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime333" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime444" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime555" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime666" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime777" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime888" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime999" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime101010" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime111111" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime121212" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetTime131313" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Commit" positionX="-63" positionY="-18" width="128" height="465"/>
+        <element name="Commit" positionX="-63" positionY="-18" width="128" height="660"/>
     </elements>
 </model>

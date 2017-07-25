@@ -263,6 +263,7 @@ class inputViewController: UIViewController{
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time131313 = df.string(from: sender.date)
     }
+   
     
     
 //    MARK:追加ボタンの処理
@@ -272,91 +273,66 @@ class inputViewController: UIViewController{
         
         
 //        MARK:commitNAME
-        if TextField.text != nil || TextField.text != "" {
-        CommitName = TextField.text!
+        if TextField.text == nil || TextField.text == "" || TextField1.text == nil || TextField1.text == "" || TextField2.text == nil || TextField2.text == "" || TextField3.text == nil || TextField3.text == "" || TextField4.text == nil || TextField4.text == "" || TextField5.text == nil || TextField5.text == "" || TextField6.text == nil || TextField6.text == "" || TextField7.text == nil || TextField7.text == "" || TextField8.text == nil || TextField8.text == "" || TextField9.text == nil || TextField9.text == "" || TextField10.text == nil || TextField10.text == "" || TextField11.text == nil || TextField11.text == "" || TextField12.text == nil || TextField12.text == "" || TextField13.text == nil || TextField13.text == "" || time1 == nil || time1 == "" || time2 == nil || time2 == "" || time3 == nil || time3 == "" || time4 == nil || time4 == "" || time5 == nil || time5 == "" || time6 == nil || time6 == "" || time7 == nil || time7 == "" || time8 == nil || time8 == "" || time9 == nil || time9 == "" || time10 == nil || time10 == "" || time11 == nil || time11 == "" || time12 == nil || time12 == "" || time13 == nil || time13 == "" || time111 == nil || time111 == "" || time222 == nil || time222 == "" || time333 == nil || time333 == "" || time444 == nil || time444 == "" || time555 == nil || time555 == "" || time666 == nil || time666 == "" || time777 == nil || time777 == "" || time888 == nil || time888 == "" || time999 == nil || time999 == "" || time101010 == nil || time101010 == "" || time111111 == nil || time111111 == "" || time121212 == nil || time121212 == "" || time131313 == nil || time131313 == "" {
+//           文字が入力されなかった場合の処理
+            if TextField.text == "" {
+                TextField.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField1.text == "" {
+                TextField1.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField2.text == "" {
+                TextField2.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField3.text == "" {
+                TextField3.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField4.text == "" {
+                TextField4.placeholder = "文字を入力してください。"
+            }
+            if TextField5.text == "" {
+                TextField5.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField6.text == "" {
+                TextField6.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField7.text == "" {
+                TextField7.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField8.text == "" {
+                TextField8.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField9.text == "" {
+                TextField9.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField10.text == "" {
+                TextField.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField11.text == "" {
+                TextField.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField12.text == "" {
+                TextField.placeholder = "文字を入力してください。"
+            }
+            
+            if TextField13.text == "" {
+                TextField.placeholder = "文字を入力してください。"
+            }
+            
         }else{
-            TextField.placeholder = "文字が入力されていません。"
-        }
-        
-//        MARK:入力文字を代入
-       if TextField1.text != nil || TextField1.text != "" {
-            textKind1 = TextField1.text!
-       }else{
-            TextField1.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField2.text != nil || TextField2.text != "" {
-            textKind2 = TextField2.text!
-        }else{
-            TextField1.placeholder = "文字が入力されていません。"
-        }
-        
-         if TextField3.text != nil || TextField3.text != "" {
-            textKind3 = TextField3.text!
-         }else{
-            TextField3.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField4.text != nil || TextField4.text != "" {
-            textKind4 = TextField4.text!
-        }else{
-            TextField4.placeholder = "文字が入力されていません。"
-        }
-        
-         if TextField5.text != nil || TextField5.text != "" {
-            textKind5 = TextField5.text!
-         }else{
-            TextField5.placeholder = "文字が入力されていません。"
-        }
-        
-         if TextField6.text != nil || TextField6.text != "" {
-            textKind6 = TextField6.text!
-         }else{
-            TextField6.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField7.text != nil || TextField7.text != "" {
-            textKind7 = TextField7.text!
-        }else{
-            TextField7.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField8.text != nil || TextField8.text != "" {
-            textKind8 = TextField8.text!
-        }else{
-            TextField8.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField9.text != nil || TextField9.text != "" {
-            textKind9 = TextField9.text!
-        }else{
-            TextField9.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField10.text != nil || TextField10.text != "" {
-            textKind10 = TextField10.text!
-        }else{
-            TextField10.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField11.text != nil || TextField11.text != "" {
-            textKind11 = TextField11.text!
-        }else{
-            TextField11.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField12.text != nil || TextField12.text != "" {
-            textKind12 = TextField12.text!
-        }else{
-            TextField12.placeholder = "文字が入力されていません。"
-        }
-        
-        if TextField13.text != nil || TextField13.text != "" {
-            textKind13 = TextField13.text!
-        }else{
-            TextField13.placeholder = "文字が入力されていません。"
-        }
-        
+            
+            
         ///        MARK:入力文字の確認
             print(textKind1)
             print(textKind2)
@@ -390,9 +366,6 @@ class inputViewController: UIViewController{
         ///現在時刻の表示
             print(now)
         
-       
-//        var hoge :NSDate = time1 as! NSDate
-        
         
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd hh:mm:ss"
@@ -409,8 +382,96 @@ class inputViewController: UIViewController{
          var electData11:NSDate = df.date(from: time11) as! NSDate
          var electData12:NSDate = df.date(from: time12) as! NSDate
          var electData13:NSDate = df.date(from: time13) as! NSDate
+            
+            
+            var electData111:NSDate = df.date(from: time111) as! NSDate
+            var electData222:NSDate = df.date(from: time222) as! NSDate
+            var electData333:NSDate = df.date(from: time333) as! NSDate
+            var electData444:NSDate = df.date(from: time444) as! NSDate
+            var electData555:NSDate = df.date(from: time555) as! NSDate
+            var electData666:NSDate = df.date(from: time666) as! NSDate
+            var electData777:NSDate = df.date(from: time777) as! NSDate
+            var electData888:NSDate = df.date(from: time888) as! NSDate
+            var electData999:NSDate = df.date(from: time999) as! NSDate
+            var electData101010:NSDate = df.date(from: time101010) as! NSDate
+            var electData111111:NSDate = df.date(from: time111111) as! NSDate
+            var electData121212:NSDate = df.date(from: time121212) as! NSDate
+            var electData131313:NSDate = df.date(from: time131313) as! NSDate
+           
+            
+            
+            
+           
+            // context(データベースを扱うのに必要)を定義。
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            
+            
+            //(データベースのエンティティです)型オブジェクトを代入します。
+            let characterSet = CharacterSet(context: context)
+            ///タイトル名の保存
+            characterSet.commitTitle = TextField.text
+            ///各項目の保存
+            characterSet.inputData1 = TextField1.text
+            characterSet.inputData2 = TextField2.text
+            characterSet.inputData3 = TextField3.text
+            characterSet.inputData4 = TextField4.text
+            characterSet.inputData5 = TextField5.text
+            characterSet.inputData6 = TextField6.text
+            characterSet.inputData7 = TextField7.text
+            characterSet.inputData8 = TextField8.text
+            characterSet.inputData9 = TextField9.text
+            characterSet.inputData10 = TextField10.text
+            characterSet.inputData11 = TextField11.text
+            characterSet.inputData12 = TextField12.text
+            characterSet.inputData13 = TextField13.text
+            
+            
+            
+           
+            // (データベースのエンティティです)型オブジェクトを代入します。
+            let acquisitionTime = AcquisitionTime(context: context)
+            ///現在時刻の保存
+            acquisitionTime.nowTime = now as NSDate
+            ///各時間の保存
+            acquisitionTime.targetDate1 = electData1
+            acquisitionTime.targetDate2 = electData2
+            acquisitionTime.targetDate3 = electData3
+            acquisitionTime.targetDate4 = electData4
+            acquisitionTime.targetDate5 = electData5
+            acquisitionTime.targetDate6 = electData6
+            acquisitionTime.targetDate7 = electData7
+            acquisitionTime.targetDate8 = electData8
+            acquisitionTime.targetDate9 = electData9
+            acquisitionTime.targetDate10 = electData10
+            acquisitionTime.targetDate11 = electData11
+            acquisitionTime.targetDate12 = electData12
+            acquisitionTime.targetDate13 = electData13
+            
+            acquisitionTime.targetDate111 = electData111
+            acquisitionTime.targetDate222 = electData222
+            acquisitionTime.targetDate333 = electData333
+            acquisitionTime.targetDate444 = electData444
+            acquisitionTime.targetDate555 = electData555
+            acquisitionTime.targetDate666 = electData666
+            acquisitionTime.targetDate777 = electData777
+            acquisitionTime.targetDate888 = electData888
+            acquisitionTime.targetDate999 = electData999
+            acquisitionTime.targetDate101010 = electData101010
+            acquisitionTime.targetDate111111 = electData111111
+            acquisitionTime.targetDate121212 = electData121212
+            acquisitionTime.targetDate131313 = electData131313
+            
+            
+            
+            
+            // 上で作成したデータをデータベースに保存します。
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+
+            performSegue(withIdentifier: "Segue", sender: nil)
+            }
+        
     }
-    
 
     @IBAction func back(_ sender: UIButton) {
          self.dismiss(animated: true, completion: nil)

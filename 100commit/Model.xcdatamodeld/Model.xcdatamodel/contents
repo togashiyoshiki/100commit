@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Commit" representedClassName=".Commit" syncable="YES">
-        <attribute name="item1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item2" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item3" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item4" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item5" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item6" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item7" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item8" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item9" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item10" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item11" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item12" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="item13" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="AcquisitionTime" representedClassName=".AcquisitionTime" syncable="YES">
         <attribute name="nowTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="targetTime1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime2" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime3" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime4" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime5" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime6" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime7" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime8" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime9" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime10" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime11" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime12" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime13" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime111" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime222" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime333" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime444" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime555" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime666" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime777" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime888" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime999" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime101010" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime111111" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime121212" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="targetTime131313" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="targetDate1" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate2" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate3" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate4" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate5" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate6" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate7" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate8" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate9" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate10" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate11" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate12" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate13" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate111" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate222" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate333" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate444" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate555" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate666" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate777" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate888" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate999" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate101010" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate111111" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate121212" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="targetDate131313" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="CharacterSet" representedClassName=".CharacterSet" syncable="YES">
+        <attribute name="commitTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inputData13" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Commit" positionX="-63" positionY="-18" width="128" height="660"/>
+        <element name="CharacterSet" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="AcquisitionTime" positionX="-54" positionY="99" width="128" height="450"/>
     </elements>
 </model>

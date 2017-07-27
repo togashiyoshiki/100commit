@@ -12,10 +12,11 @@
 		C32B19461F24E2080053F343 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B19451F24E2080053F343 /* inputViewController.swift */; };
 		C32B194F1F2526020053F343 /* CommitViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B194E1F2526020053F343 /* CommitViewViewController.swift */; };
 		C3322F651F267516003CF49F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3322F631F267516003CF49F /* Model.xcdatamodeld */; };
-		C3322F681F2676DD003CF49F /* CharacterSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3322F661F2676DD003CF49F /* CharacterSet+CoreDataClass.swift */; };
-		C3322F691F2676DD003CF49F /* CharacterSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3322F671F2676DD003CF49F /* CharacterSet+CoreDataProperties.swift */; };
 		C3322F6C1F267B82003CF49F /* AcquisitionTime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3322F6A1F267B82003CF49F /* AcquisitionTime+CoreDataClass.swift */; };
 		C3322F6D1F267B82003CF49F /* AcquisitionTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3322F6B1F267B82003CF49F /* AcquisitionTime+CoreDataProperties.swift */; };
+		C37384B91F2716FA00FC5A7F /* CharacterSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37384B71F2716FA00FC5A7F /* CharacterSet+CoreDataClass.swift */; };
+		C37384BA1F2716FA00FC5A7F /* CharacterSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37384B81F2716FA00FC5A7F /* CharacterSet+CoreDataProperties.swift */; };
+		C37385121F285CA800FC5A7F /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37385111F285CA800FC5A7F /* TargetViewController.swift */; };
 		C3850F381F1DB070008405E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3850F371F1DB070008405E2 /* AppDelegate.swift */; };
 		C3850F3A1F1DB070008405E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3850F391F1DB070008405E2 /* ViewController.swift */; };
 		C3850F3D1F1DB070008405E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3850F3B1F1DB070008405E2 /* Main.storyboard */; };
@@ -48,10 +49,11 @@
 		C32B19451F24E2080053F343 /* inputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
 		C32B194E1F2526020053F343 /* CommitViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitViewViewController.swift; sourceTree = "<group>"; };
 		C3322F641F267516003CF49F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		C3322F661F2676DD003CF49F /* CharacterSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3322F671F2676DD003CF49F /* CharacterSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3322F6A1F267B82003CF49F /* AcquisitionTime+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AcquisitionTime+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C3322F6B1F267B82003CF49F /* AcquisitionTime+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AcquisitionTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C37384B71F2716FA00FC5A7F /* CharacterSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C37384B81F2716FA00FC5A7F /* CharacterSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C37385111F285CA800FC5A7F /* TargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
 		C3850F341F1DB070008405E2 /* 100commit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100commit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3850F371F1DB070008405E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3850F391F1DB070008405E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,10 +97,10 @@
 		C3850F2B1F1DB070008405E2 = {
 			isa = PBXGroup;
 			children = (
+				C37384B71F2716FA00FC5A7F /* CharacterSet+CoreDataClass.swift */,
+				C37384B81F2716FA00FC5A7F /* CharacterSet+CoreDataProperties.swift */,
 				C3322F6A1F267B82003CF49F /* AcquisitionTime+CoreDataClass.swift */,
 				C3322F6B1F267B82003CF49F /* AcquisitionTime+CoreDataProperties.swift */,
-				C3322F661F2676DD003CF49F /* CharacterSet+CoreDataClass.swift */,
-				C3322F671F2676DD003CF49F /* CharacterSet+CoreDataProperties.swift */,
 				C3850F361F1DB070008405E2 /* 100commit */,
 				C3850F4B1F1DB071008405E2 /* 100commitTests */,
 				C3850F561F1DB071008405E2 /* 100commitUITests */,
@@ -123,6 +125,7 @@
 				C3850F371F1DB070008405E2 /* AppDelegate.swift */,
 				C3850F391F1DB070008405E2 /* ViewController.swift */,
 				C3850F3B1F1DB070008405E2 /* Main.storyboard */,
+				C37385111F285CA800FC5A7F /* TargetViewController.swift */,
 				C32B194E1F2526020053F343 /* CommitViewViewController.swift */,
 				C32B19451F24E2080053F343 /* inputViewController.swift */,
 				C32B19431F24E1E50053F343 /* SettingViewController.swift */,
@@ -289,15 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3322F681F2676DD003CF49F /* CharacterSet+CoreDataClass.swift in Sources */,
 				C3322F6D1F267B82003CF49F /* AcquisitionTime+CoreDataProperties.swift in Sources */,
+				C37384BA1F2716FA00FC5A7F /* CharacterSet+CoreDataProperties.swift in Sources */,
 				C3850F3A1F1DB070008405E2 /* ViewController.swift in Sources */,
+				C37384B91F2716FA00FC5A7F /* CharacterSet+CoreDataClass.swift in Sources */,
 				C3322F6C1F267B82003CF49F /* AcquisitionTime+CoreDataClass.swift in Sources */,
 				C3850F381F1DB070008405E2 /* AppDelegate.swift in Sources */,
 				C32B194F1F2526020053F343 /* CommitViewViewController.swift in Sources */,
+				C37385121F285CA800FC5A7F /* TargetViewController.swift in Sources */,
 				C3322F651F267516003CF49F /* Model.xcdatamodeld in Sources */,
 				C32B19461F24E2080053F343 /* inputViewController.swift in Sources */,
-				C3322F691F2676DD003CF49F /* CharacterSet+CoreDataProperties.swift in Sources */,
 				C32B19421F24E1B10053F343 /* historyViewController.swift in Sources */,
 				C32B19441F24E1E50053F343 /* SettingViewController.swift in Sources */,
 			);

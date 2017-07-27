@@ -16,19 +16,20 @@ extension CharacterSet {
         return NSFetchRequest<CharacterSet>(entityName: "CharacterSet")
     }
 
-    @NSManaged public var inputData2: String?
-    @NSManaged public var inputData1: String?
-    @NSManaged public var inputData13: String?
-    @NSManaged public var inputData12: String?
-    @NSManaged public var inputData11: String?
-    @NSManaged public var inputData10: String?
-    @NSManaged public var inputData9: String?
-    @NSManaged public var inputData8: String?
-    @NSManaged public var inputData7: String?
-    @NSManaged public var inputData6: String?
-    @NSManaged public var inputData5: String?
-    @NSManaged public var inputData4: String?
-    @NSManaged public var inputData3: String?
     @NSManaged public var commitTitle: String?
+    @NSManaged public var inputData1: String?
+    @NSManaged public var inputData2: String?
+    @NSManaged public var inputData3: String?
+    @NSManaged public var inputData4: String?
+    @NSManaged public var inputData5: String?
+    @NSManaged public var inputData6: String?
+    @NSManaged public var inputData7: String?
+    @NSManaged public var inputData8: String?
+    @NSManaged public var inputData9: String?
+    @NSManaged public var inputData10: String?
+    @NSManaged public var inputData11: String?
+    @NSManaged public var inputData12: String?
+    @NSManaged public var inputData13: String?
+    @NSManaged public var nowTime: NSDate?
 
 }

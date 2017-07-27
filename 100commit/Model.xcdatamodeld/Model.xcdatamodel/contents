@@ -44,9 +44,10 @@
         <attribute name="inputData11" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="inputData12" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="inputData13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nowTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CharacterSet" positionX="-63" positionY="-18" width="128" height="255"/>
         <element name="AcquisitionTime" positionX="-54" positionY="99" width="128" height="450"/>
+        <element name="CharacterSet" positionX="-63" positionY="-18" width="128" height="270"/>
     </elements>
 </model>

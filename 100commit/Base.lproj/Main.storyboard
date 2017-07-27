@@ -29,31 +29,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-8G-zyC">
-                                <rect key="frame" x="16" y="390" width="154" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="過去の履歴"/>
-                                <connections>
-                                    <segue destination="6Vv-YQ-DXO" kind="showDetail" id="APv-Um-4zF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiS-1z-4Dq">
-                                <rect key="frame" x="205" y="390" width="154" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="設定"/>
-                                <connections>
-                                    <segue destination="gSD-aR-iNN" kind="showDetail" id="Efw-uN-kUY"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-bJ-tTP">
-                                <rect key="frame" x="16" y="236" width="343" height="109"/>
+                                <rect key="frame" x="16" y="177" width="343" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="コミットチェック"/>
                                 <connections>
                                     <segue destination="YJd-Kh-3zG" kind="showDetail" id="Y73-ec-TJL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-8G-zyC">
+                                <rect key="frame" x="16" y="334" width="343" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="過去の履歴"/>
+                                <connections>
+                                    <segue destination="6Vv-YQ-DXO" kind="showDetail" id="APv-Um-4zF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,6 +88,12 @@
                                                     <!--2017-07-23 16:44:38 +0000-->
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="highlightsToday" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="Date1:" destination="YJd-Kh-3zG" eventType="valueChanged" id="L6q-iD-8gT"/>
                                                 </connections>
@@ -325,7 +322,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date1:" destination="YJd-Kh-3zG" eventType="valueChanged" id="ocH-bu-AQR"/>
+                                                    <action selector="Date111:" destination="YJd-Kh-3zG" eventType="valueChanged" id="S81-fk-AQa"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jv9-qt-I3Q">
@@ -336,7 +333,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date2:" destination="YJd-Kh-3zG" eventType="valueChanged" id="7lk-ce-mSo"/>
+                                                    <action selector="Date222:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Qfy-gu-QfI"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6wP-Ou-dDZ">
@@ -347,7 +344,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date3:" destination="YJd-Kh-3zG" eventType="valueChanged" id="frc-ov-Qsm"/>
+                                                    <action selector="Date333:" destination="YJd-Kh-3zG" eventType="valueChanged" id="jF2-PG-6d0"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fob-H9-uda">
@@ -358,7 +355,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date4:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Vgo-Hz-jHI"/>
+                                                    <action selector="Date444:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Ev3-dX-fDV"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="F4S-YA-9zc">
@@ -369,7 +366,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date5:" destination="YJd-Kh-3zG" eventType="valueChanged" id="IlN-Rr-QLU"/>
+                                                    <action selector="Date555:" destination="YJd-Kh-3zG" eventType="valueChanged" id="iDN-gg-Hs0"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vQN-Pw-dM8">
@@ -380,7 +377,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date6:" destination="YJd-Kh-3zG" eventType="valueChanged" id="fac-it-gVh"/>
+                                                    <action selector="Date666:" destination="YJd-Kh-3zG" eventType="valueChanged" id="4wG-5k-J28"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FTE-lj-UIP">
@@ -391,7 +388,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date7:" destination="YJd-Kh-3zG" eventType="valueChanged" id="2yn-qB-puP"/>
+                                                    <action selector="Date777:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Zrp-bb-pRd"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="syn-dN-VVX">
@@ -402,7 +399,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date8:" destination="YJd-Kh-3zG" eventType="valueChanged" id="sL2-cU-VTT"/>
+                                                    <action selector="Date888:" destination="YJd-Kh-3zG" eventType="valueChanged" id="2i2-xT-1HX"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-EQ-RJN">
@@ -413,7 +410,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date9:" destination="YJd-Kh-3zG" eventType="valueChanged" id="r72-Sr-N73"/>
+                                                    <action selector="Date999:" destination="YJd-Kh-3zG" eventType="valueChanged" id="m3h-hq-PwZ"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6ym-fo-UuW">
@@ -424,7 +421,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date10:" destination="YJd-Kh-3zG" eventType="valueChanged" id="Vs8-WW-G1g"/>
+                                                    <action selector="Date101010:" destination="YJd-Kh-3zG" eventType="valueChanged" id="PUe-ym-fUk"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wGB-S6-E0N">
@@ -435,7 +432,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date11:" destination="YJd-Kh-3zG" eventType="valueChanged" id="ceH-AV-HS8"/>
+                                                    <action selector="Date111111:" destination="YJd-Kh-3zG" eventType="valueChanged" id="J55-BG-c8T"/>
                                                 </connections>
                                             </datePicker>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-G1-ZiQ">
@@ -446,7 +443,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date12:" destination="YJd-Kh-3zG" eventType="valueChanged" id="99W-UU-ZRU"/>
+                                                    <action selector="Date121212:" destination="YJd-Kh-3zG" eventType="valueChanged" id="XeF-IH-GBD"/>
                                                 </connections>
                                             </datePicker>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="１日のスケジュール" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-ah-5lr">
@@ -479,7 +476,7 @@
                                                 </date>
                                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                                 <connections>
-                                                    <action selector="Date13:" destination="YJd-Kh-3zG" eventType="valueChanged" id="l1c-et-dRW"/>
+                                                    <action selector="Date131313:" destination="YJd-Kh-3zG" eventType="valueChanged" id="dhb-Hr-pg5"/>
                                                 </connections>
                                             </datePicker>
                                         </subviews>
@@ -589,7 +586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16y-NV-CKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2224.8000000000002" y="138.53073463268368"/>
+            <point key="canvasLocation" x="2167" y="739"/>
         </scene>
         <!--Commit View View Controller-->
         <scene sceneID="4A9-ui-Ji6">
@@ -873,25 +870,25 @@
                         <outlet property="Label7" destination="q8s-Ao-KxF" id="9ha-Uq-tnE"/>
                         <outlet property="Label8" destination="mI0-iU-917" id="Vlt-yM-4Wm"/>
                         <outlet property="Label9" destination="bm3-6E-3K0" id="ELW-Fm-ddQ"/>
-                        <outlet property="time1" destination="jin-MR-Zor" id="0bj-JE-rfS"/>
-                        <outlet property="time10" destination="ke4-zb-H1O" id="fOV-SB-mKY"/>
-                        <outlet property="time11" destination="qzq-a3-Sbf" id="bzT-wi-E4c"/>
-                        <outlet property="time12" destination="XyC-pq-gRy" id="Zmz-aM-Hzq"/>
-                        <outlet property="time13" destination="zuu-NW-qCH" id="Oa0-oD-EZ5"/>
-                        <outlet property="time2" destination="G2M-MA-yR8" id="eCD-40-4gu"/>
-                        <outlet property="time3" destination="0NI-ET-fbB" id="pz1-3f-1kw"/>
-                        <outlet property="time4" destination="qmP-AQ-8Oa" id="m7d-Ro-zm0"/>
-                        <outlet property="time5" destination="XC4-UV-cAz" id="ohm-Od-l5Q"/>
-                        <outlet property="time6" destination="3QL-nt-yQg" id="Twl-9U-9Z9"/>
-                        <outlet property="time7" destination="C31-to-Rd0" id="Kfb-zi-rxA"/>
-                        <outlet property="time8" destination="Wvc-iY-7gb" id="lkh-da-pBg"/>
-                        <outlet property="time9" destination="S1p-mm-uSd" id="eLV-Le-5bk"/>
+                        <outlet property="timeLabel1" destination="jin-MR-Zor" id="ZrD-Xu-QaI"/>
+                        <outlet property="timeLabel10" destination="ke4-zb-H1O" id="USw-Mn-6Uh"/>
+                        <outlet property="timeLabel11" destination="qzq-a3-Sbf" id="0yz-h2-sgz"/>
+                        <outlet property="timeLabel12" destination="XyC-pq-gRy" id="Bwp-wg-UMq"/>
+                        <outlet property="timeLabel13" destination="zuu-NW-qCH" id="udY-wv-gOV"/>
+                        <outlet property="timeLabel2" destination="G2M-MA-yR8" id="GX9-9h-eha"/>
+                        <outlet property="timeLabel3" destination="0NI-ET-fbB" id="Z30-eS-vft"/>
+                        <outlet property="timeLabel4" destination="qmP-AQ-8Oa" id="lce-q2-0y1"/>
+                        <outlet property="timeLabel5" destination="XC4-UV-cAz" id="rqf-E0-FeZ"/>
+                        <outlet property="timeLabel6" destination="3QL-nt-yQg" id="p8r-cw-UXe"/>
+                        <outlet property="timeLabel7" destination="C31-to-Rd0" id="Xpm-Aw-Yx4"/>
+                        <outlet property="timeLabel8" destination="Wvc-iY-7gb" id="z1u-1e-6N7"/>
+                        <outlet property="timeLabel9" destination="S1p-mm-uSd" id="950-8u-IX0"/>
                         <outlet property="titleLabel" destination="Xye-Nf-mFs" id="KVN-jj-1hk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KE-3e-vPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3216.8000000000002" y="138.53073463268368"/>
+            <point key="canvasLocation" x="3306" y="739"/>
         </scene>
         <!--過去の履歴-->
         <scene sceneID="UN4-81-eQd">
@@ -920,6 +917,25 @@
                                     <action selector="back:" destination="6Vv-YQ-DXO" eventType="touchUpInside" id="Geb-eJ-ej3"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8vc-md-ebn">
+                                <rect key="frame" x="16" y="72" width="343" height="587"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TZi-nj-JcN">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TZi-nj-JcN" id="gNf-vc-2Yt">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Vv-YQ-DXO" id="993-7i-n7f"/>
+                                    <outlet property="delegate" destination="6Vv-YQ-DXO" id="aQw-xl-g6G"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -935,10 +951,321 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="xNH-ov-Vqj" kind="showDetail" identifier="Segue1" id="TMX-FY-one"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnO-FA-ytc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="887"/>
+            <point key="canvasLocation" x="1076" y="892"/>
+        </scene>
+        <!--Target View Controller-->
+        <scene sceneID="JVS-V2-o27">
+            <objects>
+                <viewController id="xNH-ov-Vqj" customClass="TargetViewController" customModule="_00commit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z61-Pg-Rdk"/>
+                        <viewControllerLayoutGuide type="bottom" id="2xa-Ai-IfR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lf6-5h-vw9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-UH-jEF">
+                                <rect key="frame" x="0.0" y="200" width="375" height="1800"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sg0-Dp-mW0">
+                                        <rect key="frame" x="0.0" y="37" width="375" height="1963"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxP-C5-QLF">
+                                                <rect key="frame" x="8" y="169" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEZ-5l-GsO">
+                                                <rect key="frame" x="8" y="59" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-6k-KGm">
+                                                <rect key="frame" x="8" y="8" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyn-pG-W4u">
+                                                <rect key="frame" x="8" y="221" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmY-8X-A9S">
+                                                <rect key="frame" x="8" y="331" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4j-nN-iC5">
+                                                <rect key="frame" x="8" y="389" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gI-8d-9dC">
+                                                <rect key="frame" x="8" y="441" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJK-5H-jrD">
+                                                <rect key="frame" x="8" y="499" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7C-Tz-ilN">
+                                                <rect key="frame" x="8" y="279" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ak-IY-Gg8">
+                                                <rect key="frame" x="8" y="551" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsZ-GV-rnm">
+                                                <rect key="frame" x="8" y="609" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef3-A1-Ent">
+                                                <rect key="frame" x="8" y="661" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPd-MW-rH0">
+                                                <rect key="frame" x="8" y="719" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAF-DD-Eg8">
+                                                <rect key="frame" x="8" y="771" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IW0-jA-BeN">
+                                                <rect key="frame" x="8" y="829" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gj3-gJ-IKz">
+                                                <rect key="frame" x="8" y="881" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q56-Uc-oqc">
+                                                <rect key="frame" x="8" y="939" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9C-gt-FJK">
+                                                <rect key="frame" x="8" y="991" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-Mu-zYc">
+                                                <rect key="frame" x="8" y="1049" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GL-p2-yet">
+                                                <rect key="frame" x="8" y="1101" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlR-SI-T5x">
+                                                <rect key="frame" x="8" y="1159" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNs-g8-UhM">
+                                                <rect key="frame" x="8" y="1211" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-IQ-HSz">
+                                                <rect key="frame" x="8" y="1321" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3b-MH-SGO">
+                                                <rect key="frame" x="8" y="1379" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="起床時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSf-GV-7Sg">
+                                                <rect key="frame" x="8" y="111" width="359" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="使用時間はhogehogeです。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-Ir-CsM">
+                                                <rect key="frame" x="8" y="1269" width="359" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1963" id="mPj-cb-Myo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Sg0-Dp-mW0" secondAttribute="trailing" id="5aS-lK-Sii"/>
+                                    <constraint firstItem="Sg0-Dp-mW0" firstAttribute="centerX" secondItem="ce1-UH-jEF" secondAttribute="centerX" id="MN1-s8-7aU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sg0-Dp-mW0" secondAttribute="bottom" constant="-200" id="Qfn-Ft-fsO"/>
+                                    <constraint firstItem="Sg0-Dp-mW0" firstAttribute="top" secondItem="ce1-UH-jEF" secondAttribute="top" constant="37" id="gpn-WT-q6K"/>
+                                    <constraint firstItem="Sg0-Dp-mW0" firstAttribute="leading" secondItem="ce1-UH-jEF" secondAttribute="leading" id="ppk-ob-p74"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの使っている時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWC-Ab-GjC">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="trG-lL-Y4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コミット名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-YJ-Jat">
+                                <rect key="frame" x="8" y="85" width="359" height="43"/>
+                                <color key="backgroundColor" red="0.92159152030000002" green="0.92155694960000001" blue="0.92158031460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x88-rP-vwv">
+                                <rect key="frame" x="16" y="23" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back:" destination="xNH-ov-Vqj" eventType="touchUpInside" id="grZ-IV-YOW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ce1-UH-jEF" secondAttribute="trailing" id="16N-26-x04"/>
+                            <constraint firstItem="2xa-Ai-IfR" firstAttribute="top" secondItem="ce1-UH-jEF" secondAttribute="bottom" id="1co-Xv-sC4"/>
+                            <constraint firstItem="6ft-YJ-Jat" firstAttribute="leading" secondItem="lf6-5h-vw9" secondAttribute="leadingMargin" constant="-8" id="9U3-B4-2KQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ce1-UH-jEF" secondAttribute="trailing" id="JEN-HU-nNU"/>
+                            <constraint firstItem="VWC-Ab-GjC" firstAttribute="leading" secondItem="ce1-UH-jEF" secondAttribute="leading" id="Q6D-Wa-PR9"/>
+                            <constraint firstItem="VWC-Ab-GjC" firstAttribute="trailing" secondItem="ce1-UH-jEF" secondAttribute="trailing" id="T1j-6h-Ki2"/>
+                            <constraint firstItem="6ft-YJ-Jat" firstAttribute="centerX" secondItem="VWC-Ab-GjC" secondAttribute="centerX" id="VXe-bv-DFn"/>
+                            <constraint firstItem="6ft-YJ-Jat" firstAttribute="top" secondItem="VWC-Ab-GjC" secondAttribute="bottom" constant="8" symbolic="YES" id="ZiM-fn-WyY"/>
+                            <constraint firstItem="ce1-UH-jEF" firstAttribute="top" secondItem="Z61-Pg-Rdk" secondAttribute="bottom" constant="180" id="ZjZ-4D-4C7"/>
+                            <constraint firstItem="ce1-UH-jEF" firstAttribute="top" secondItem="6ft-YJ-Jat" secondAttribute="bottom" constant="72" id="a4S-1P-2BL"/>
+                            <constraint firstItem="ce1-UH-jEF" firstAttribute="leading" secondItem="lf6-5h-vw9" secondAttribute="leading" id="j45-Nm-dZ0"/>
+                            <constraint firstItem="ce1-UH-jEF" firstAttribute="top" secondItem="6ft-YJ-Jat" secondAttribute="bottom" constant="72" id="kbc-vY-qXu"/>
+                            <constraint firstItem="ce1-UH-jEF" firstAttribute="leading" secondItem="lf6-5h-vw9" secondAttribute="leading" id="lBg-MA-E2F"/>
+                            <constraint firstItem="ce1-UH-jEF" firstAttribute="bottom" secondItem="2xa-Ai-IfR" secondAttribute="top" id="q9r-51-lfc"/>
+                            <constraint firstItem="VWC-Ab-GjC" firstAttribute="top" secondItem="lf6-5h-vw9" secondAttribute="topMargin" constant="-1" id="qMj-TV-hMz"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="Label1" destination="5fh-6k-KGm" id="PYA-PV-mvQ"/>
+                        <outlet property="Label10" destination="v9C-gt-FJK" id="KuF-A6-uPY"/>
+                        <outlet property="Label11" destination="7GL-p2-yet" id="xyy-aa-62Y"/>
+                        <outlet property="Label12" destination="kNs-g8-UhM" id="yBd-rS-dnC"/>
+                        <outlet property="Label13" destination="ZGe-IQ-HSz" id="XHG-Ye-g69"/>
+                        <outlet property="Label2" destination="pSf-GV-7Sg" id="po3-Wv-dUO"/>
+                        <outlet property="Label3" destination="Eyn-pG-W4u" id="aIc-yn-r8S"/>
+                        <outlet property="Label4" destination="cmY-8X-A9S" id="mZx-O1-xld"/>
+                        <outlet property="Label5" destination="6gI-8d-9dC" id="C63-TL-x41"/>
+                        <outlet property="Label6" destination="9Ak-IY-Gg8" id="fFO-EW-vHT"/>
+                        <outlet property="Label7" destination="ef3-A1-Ent" id="haY-c5-fYt"/>
+                        <outlet property="Label8" destination="gAF-DD-Eg8" id="W0s-j5-bz7"/>
+                        <outlet property="Label9" destination="Gj3-gJ-IKz" id="lND-kk-nY7"/>
+                        <outlet property="TitleName" destination="6ft-YJ-Jat" id="GvS-z3-KvY"/>
+                        <outlet property="targetTime1" destination="HEZ-5l-GsO" id="Vuu-wV-07R"/>
+                        <outlet property="targetTime10" destination="c2Y-Mu-zYc" id="vNQ-Aa-eXW"/>
+                        <outlet property="targetTime11" destination="PlR-SI-T5x" id="pQ4-I2-tpX"/>
+                        <outlet property="targetTime12" destination="QQx-Ir-CsM" id="hSd-dk-CqJ"/>
+                        <outlet property="targetTime13" destination="T3b-MH-SGO" id="oZ1-oj-eqW"/>
+                        <outlet property="targetTime2" destination="KxP-C5-QLF" id="kpM-ZU-3aV"/>
+                        <outlet property="targetTime3" destination="o7C-Tz-ilN" id="hEO-wS-76z"/>
+                        <outlet property="targetTime4" destination="O4j-nN-iC5" id="61k-08-q6h"/>
+                        <outlet property="targetTime5" destination="UJK-5H-jrD" id="MUe-T7-Vo3"/>
+                        <outlet property="targetTime6" destination="GsZ-GV-rnm" id="n8v-M7-13S"/>
+                        <outlet property="targetTime7" destination="oPd-MW-rH0" id="Sz2-aj-xeX"/>
+                        <outlet property="targetTime8" destination="IW0-jA-BeN" id="vZI-Pe-vYX"/>
+                        <outlet property="targetTime9" destination="Q56-Uc-oqc" id="GgN-4F-79W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhk-PN-sO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="2289.3553223388308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ymf-DI-qzk">
@@ -957,60 +1284,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQo-Ur-jBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="236" y="139"/>
-        </scene>
-        <!--設定-->
-        <scene sceneID="5v7-ho-8wG">
-            <objects>
-                <viewController id="gSD-aR-iNN" customClass="SettingViewController" customModule="_00commit" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oEL-nE-IhT"/>
-                        <viewControllerLayoutGuide type="bottom" id="mih-3x-zfI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oLA-aY-QOP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="設定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl4-Fh-TG4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-T0-swM">
-                                <rect key="frame" x="16" y="17" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="back:" destination="gSD-aR-iNN" eventType="touchUpInside" id="MRA-wz-acg"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="設定" id="nJD-CZ-ena">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="Aix-iB-ESl">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ore-ll-pvq">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="戻る"/>
-                            </button>
-                            <connections>
-                                <action selector="back:" destination="gSD-aR-iNN" id="Ouh-Zl-K9n"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Yti-v9-9ev">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EhC-dG-Ecq">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="保存"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qOZ-qg-jSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1503" y="887"/>
         </scene>
     </scenes>
 </document>

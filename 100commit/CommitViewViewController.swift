@@ -94,6 +94,15 @@ class CommitViewViewController: UIViewController {
     @IBOutlet weak var timeLabel13: UILabel!
     
     
+    ///コミット計算の表示
+    @IBOutlet weak var commitTime: UILabel!
+    
+    ///コミット計算用
+    var commitTimeText : String = ""
+    
+    
+    
+    
     func read(){
 //        カラの変数を用意する
         //        AooDelegateを使う用意をしておく
@@ -246,34 +255,284 @@ class CommitViewViewController: UIViewController {
                 var ret12 = retInterval12/60
                 var ret13 = retInterval13/60
                 
+                ///時間分岐表示
+                if ret1 > 60 {
+                    print("１時間以上です。")
+                    ret1  = ret1 / 60
+                    var str1: String = String("\(ret1)時間")
+                    timeLabel1.text = str1
+                }else{
+                    print("１時間未満")
+                      var str1: String = String("\(ret1)分")
+                        timeLabel1.text = str1
+                }
+                
+                if ret2 > 60 {
+                    print("１時間以上です。")
+                    ret2  = ret2 / 60
+                    var str2: String = String("\(ret2)時間")
+                    timeLabel2.text = str2
+                }else{
+                    print("１時間未満")
+                    var str2: String = String("\(ret2)分")
+                    timeLabel2.text = str2
+                }
+
+                if ret3 > 60 {
+                    print("１時間以上です。")
+                    ret3  = ret3 / 60
+                    var str3: String = String("\(ret3)時間")
+                    timeLabel3.text = str3
+                }else{
+                    print("１時間未満")
+                    var str3: String = String("\(ret3)分")
+                    timeLabel3.text = str3
+                }
+                
+                if ret4 > 60 {
+                    print("１時間以上です。")
+                    ret4  = ret4 / 60
+                    var str4: String = String("\(ret4)時間")
+                    timeLabel4.text = str4
+                }else{
+                    print("１時間未満")
+                    var str4: String = String("\(ret4)分")
+                    timeLabel4.text = str4
+                }
+                
+                if ret5 > 60 {
+                    print("１時間以上です。")
+                    ret5  = ret5 / 60
+                    var str5: String = String("\(ret5)時間")
+                    timeLabel5.text = str5
+                }else{
+                    print("１時間未満")
+                    var str5: String = String("\(ret5)分")
+                    timeLabel5.text = str5
+                }
+                
+                if ret6 > 60 {
+                    print("１時間以上です。")
+                    ret6  = ret6 / 60
+                    var str6: String = String("\(ret6)時間")
+                    timeLabel6.text = str6
+                }else{
+                    print("１時間未満")
+                    var str6: String = String("\(ret6)分")
+                    timeLabel6.text = str6
+                }
+                
+                
+                if ret7 > 60 {
+                    print("１時間以上です。")
+                    ret7  = ret7 / 60
+                    var str7: String = String("\(ret7)時間")
+                    timeLabel7.text = str7
+                }else{
+                    print("１時間未満")
+                    var str7: String = String("\(ret7)分")
+                    timeLabel7.text = str7
+                }
+                
+                if ret8 > 60 {
+                    print("１時間以上です。")
+                    ret8  = ret8 / 60
+                    var str8: String = String("\(ret8)時間")
+                    timeLabel8.text = str8
+                }else{
+                    print("１時間未満")
+                    var str8: String = String("\(ret8)分")
+                    timeLabel8.text = str8
+                }
+                
+                
+                if ret9 > 60 {
+                    print("１時間以上です。")
+                    ret9  = ret9 / 60
+                    var str9: String = String("\(ret9)時間")
+                    timeLabel9.text = str9
+                }else{
+                    print("１時間未満")
+                    var str9: String = String("\(ret9)分")
+                    timeLabel9.text = str9
+                }
+                
+                if ret10 > 60 {
+                    print("１時間以上です。")
+                    ret10  = ret10 / 60
+                    var str10: String = String("\(ret10)時間")
+                    timeLabel10.text = str10
+                }else{
+                    print("１時間未満")
+                    var str10: String = String("\(ret10)分")
+                    timeLabel10.text = str10
+                }
+                
+                if ret11 > 60 {
+                    print("１時間以上です。")
+                    ret11  = ret11 / 60
+                    var str11: String = String("\(ret11)時間")
+                    timeLabel11.text = str11
+                }else{
+                    print("１時間未満")
+                    var str11: String = String("\(ret11)分")
+                    timeLabel11.text = str11
+                }
+                
+                if ret12 > 60 {
+                    print("１時間以上です。")
+                    ret12  = ret12 / 60
+                    var str12: String = String("\(ret12)時間")
+                    timeLabel12.text = str12
+                }else{
+                    print("１時間未満")
+                    var str12: String = String("\(ret12)分")
+                    timeLabel12.text = str12
+                }
+                
+                if ret13 > 60 {
+                    print("１時間以上です。")
+                    ret13  = ret13 / 60
+                    var str13: String = String("\(ret13)時間")
+                    timeLabel2.text = str13
+                }else{
+                    print("１時間未満")
+                    var str13: String = String("\(ret13)分")
+                    timeLabel2.text = str13
+                }
+                
+                
 //        double型をString型で文字として保存
-                var str1: String = String("\(ret1)分")
-                var str2: String = String("\(ret2)分")
-                var str3: String = String("\(ret3)分")
-                var str4: String = String("\(ret4)分")
-                var str5: String = String("\(ret5)分")
-                var str6: String = String("\(ret6)分")
-                var str7: String = String("\(ret7)分")
-                var str8: String = String("\(ret8)分")
-                var str9: String = String("\(ret9)分")
-                var str10: String = String("\(ret10)分")
-                var str11: String = String("\(ret11)分")
-                var str12: String = String("\(ret12)分")
-                var str13: String = String("\(ret13)分")
+//              
+//                var str2: String = String("\(ret2)分")
+//                var str3: String = String("\(ret3)分")
+//                var str4: String = String("\(ret4)分")
+//                var str5: String = String("\(ret5)分")
+//                var str6: String = String("\(ret6)分")
+//                var str7: String = String("\(ret7)分")
+//                var str8: String = String("\(ret8)分")
+//                var str9: String = String("\(ret9)分")
+//                var str10: String = String("\(ret10)分")
+//                var str11: String = String("\(ret11)分")
+//                var str12: String = String("\(ret12)分")
+//                var str13: String = String("\(ret13)分")
+                
                 //                文字を表示します
-                timeLabel1.text = str1
-                timeLabel2.text = str2
-                timeLabel3.text = str3
-                timeLabel4.text = str4
-                timeLabel5.text = str5
-                timeLabel6.text = str6
-                timeLabel7.text = str7
-                timeLabel8.text = str8
-                timeLabel9.text = str9
-                timeLabel10.text = str10
-                timeLabel11.text = str11
-                timeLabel12.text = str12
-                timeLabel13.text = str13
+//               
+//                timeLabel2.text = str2
+//                timeLabel3.text = str3
+//                timeLabel4.text = str4
+//                timeLabel5.text = str5
+//                timeLabel6.text = str6
+//                timeLabel7.text = str7
+//                timeLabel8.text = str8
+//                timeLabel9.text = str9
+//                timeLabel10.text = str10
+//                timeLabel11.text = str11
+//                timeLabel12.text = str12
+//                timeLabel13.text = str13
+//                
+                //commit計算表示
+                
+                if item1 == "コミット"  {
+                    var str1: String = String("\(ret1)分")
+                    commitTime.text = str1
+                }
+                
+                if item2 == "コミット"  {
+                    var str2: String = String("\(ret2)分")
+                    commitTime.text = str2
+                }
+                
+                if item3 == "コミット"  {
+                    
+                    var str3: String = String("\(ret3)分")
+                    
+                    commitTime.text = str3
+                    
+                }
+                
+                if item4 == "コミット"  {
+                    
+                    var str4: String = String("\(ret4)分")
+                    
+                    commitTime.text = str4
+                    
+                }
+                
+                if item5 == "コミット"  {
+                    
+                    var str5: String = String("\(ret5)分")
+                    
+                    commitTime.text = str5
+                    
+                }
+                
+                if item6 == "コミット"  {
+                    
+                    var str6: String = String("\(ret6)分")
+                    
+                    commitTime.text = str6
+                    
+                }
+                
+                if item7 == "コミット"  {
+                    
+                    var str7: String = String("\(ret7)分")
+                    
+                    commitTime.text = str7
+                    
+                }
+                
+                if item8 == "コミット"  {
+                    
+                    var str8: String = String("\(ret8)分")
+                    
+                    commitTime.text = str8
+                    
+                }
+                
+                if item9 == "コミット"  {
+                    
+                    var str9: String = String("\(ret9)分")
+                    
+                    commitTime.text = str9
+                    
+                }
+                
+                if item10 == "コミット"  {
+                    
+                    var str10: String = String("\(ret10)分")
+                    
+                    commitTime.text = str10
+                    
+                }
+                
+                if item11 == "コミット"  {
+                    
+                    var str11: String = String("\(ret11)分")
+                    
+                    commitTime.text = str11
+                    
+                }
+                
+                if item12 == "コミット"  {
+                    
+                    var str12: String = String("\(ret12)分")
+                    
+                    commitTime.text = str12
+                    
+                }
+                
+                if item13 == "コミット"  {
+                    
+                    var str13: String = String("\(ret13)分")
+                    
+                    commitTime.text = str13
+                    
+                }
+               
+                                
             }
         }catch{
         }

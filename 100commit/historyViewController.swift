@@ -280,6 +280,46 @@ class historyViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     
     
+  //MAKR:作成未定
+//
+//    //    削除機能
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            myTitle.remove(at: indexPath.row)
+//            print(myTitle)
+//            myDetail.remove(at: indexPath.row)
+//            print(myDetail)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//            //        AooDelegateを使う用意をしておく
+//            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//            //        エンティティを操作するためのオブジェクトを作成
+//            let viewContext = appDelegate.persistentContainer.viewContext
+//            //        どのエンティティからデータを取得してくるか設定
+//            let query:NSFetchRequest<Daily> = Daily.fetchRequest()
+//            do{
+//                //            削除するデータを取得
+//                let fetchResults = try viewContext.fetch(query)
+//                //            削除するデータを取得
+//                for result : AnyObject in fetchResults {
+//                    let deta: NSDate! = result.value(forKey: "deilyDeta") as! NSDate
+//                    let formatter = DateFormatter()
+//                    formatter.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
+//                    //Stringにしたい
+//                    let detastring:String = formatter.string(from: deta as Date)
+//                    
+//                    if detastring == myDeta[indexPath.row]{
+//                        //        一行ずつ削除
+//                        let record = result as! NSManagedObject
+//                        viewContext.delete(record)
+//                    }
+//                }
+//                //            削除した状態を保存(処理の確定)
+//                try viewContext.save()
+//            }catch{
+//            }
+//        }
+//    }
+//    
     
     
     

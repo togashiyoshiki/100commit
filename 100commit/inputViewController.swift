@@ -22,35 +22,35 @@ class inputViewController: UIViewController{
     var textKind13:String = ""
     
 //MARK:時間管理 　開始時間
-    var time1:String = "2020-01-01 07:00:00"
-    var time2:String = "2020-01-01 08:00:00"
-    var time3:String = "2020-01-01 10:00:00"
-    var time4:String = "2020-01-01 12:00:00"
-    var time5:String = "2020-01-01 13:00:00"
-    var time6:String = "2020-01-01 15:00:00"
-    var time7:String = "2020-01-01 16:00:00"
-    var time8:String = "2020-01-01 17:00:00"
-    var time9:String = "2020-01-01 19:00:00"
-    var time10:String = "2020-01-01 20:00:00"
-    var time11:String = "2020-01-01 21:30:00"
-    var time12:String = "2020-01-01 22:00:00"
-    var time13:String = "2020-01-01 23:00:00"
+    var time1:String = "2000-01-01 07:00:00"
+    var time2:String = "2000-01-01 08:00:00"
+    var time3:String = "2000-01-01 10:00:00"
+    var time4:String = "2000-01-01 12:00:00"
+    var time5:String = "2000-01-01 13:00:00"
+    var time6:String = "2000-01-01 15:00:00"
+    var time7:String = "2000-01-01 16:00:00"
+    var time8:String = "2000-01-01 17:00:00"
+    var time9:String = "2000-01-01 19:00:00"
+    var time10:String = "2000-01-01 20:00:00"
+    var time11:String = "2000-01-01 21:30:00"
+    var time12:String = "2000-01-01 22:00:00"
+    var time13:String = "2000-01-01 23:00:00"
     
     
     //MARK:時間管理 　終了時間
-    var time111:String = "2020-01-01 07:30:00"
-    var time222:String = "2020-01-01 08:30:00"
-    var time333:String = "2020-01-01 10:30:00"
-    var time444:String = "2020-01-01 12:30:00"
-    var time555:String = "2020-01-01 13:30:00"
-    var time666:String = "2020-01-01 15:30:00"
-    var time777:String = "2020-01-01 16:30:00"
-    var time888:String = "2020-01-01 17:30:00"
-    var time999:String = "2020-01-01 20:30:00"
-    var time101010:String = "2020-01-01 20:30:00"
-    var time111111:String = "2020-01-01 21:30:00"
-    var time121212:String = "2020-01-01 22:30:00"
-    var time131313:String = "2020-01-01 23:30:00"
+    var time111:String = "2000-01-01 07:30:00"
+    var time222:String = "2000-01-01 08:30:00"
+    var time333:String = "2000-01-01 10:30:00"
+    var time444:String = "2000-01-01 12:30:00"
+    var time555:String = "2000-01-01 13:30:00"
+    var time666:String = "2000-01-01 15:30:00"
+    var time777:String = "2000-01-01 16:30:00"
+    var time888:String = "2000-01-01 17:30:00"
+    var time999:String = "2000-01-01 20:30:00"
+    var time101010:String = "2000-01-01 20:30:00"
+    var time111111:String = "2000-01-01 21:30:00"
+    var time121212:String = "2000-01-01 22:30:00"
+    var time131313:String = "2000-01-01 23:30:00"
 
     
 //    MARK:コミット名
@@ -117,72 +117,99 @@ class inputViewController: UIViewController{
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time2 = df.string(from: sender.date)
+        
+       
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker2.minimumDate = df.date(from: time111)
+        
     }
     
     @IBAction func Date3(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time3 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker3.minimumDate = df.date(from: time222)
     }
     
     @IBAction func Date4(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time4 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker4.minimumDate = df.date(from: time333)
     }
     
     @IBAction func Date5(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time5 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker5.minimumDate = df.date(from: time444)
     }
     
     @IBAction func Date6(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time6 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker6.minimumDate = df.date(from: time555)
     }
     
     @IBAction func Date7(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time7 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker7.minimumDate = df.date(from: time666)
     }
     
     @IBAction func Date8(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time8 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker8.minimumDate = df.date(from: time777)
     }
     
     @IBAction func Date9(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time9 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker9.minimumDate = df.date(from: time888)
     }
     
     @IBAction func Date10(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time10 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker10.minimumDate = df.date(from: time999)
     }
     
     @IBAction func Date11(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time11 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker11.minimumDate = df.date(from: time101010)
     }
     
     @IBAction func Date12(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time12 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker12.minimumDate = df.date(from: time111111)
     }
     
     @IBAction func Date13(_ sender: UIDatePicker) {
         let df  = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         time13 = df.string(from: sender.date)
+        //        選択可能な最小値を設定(最も古い日)
+        DatePicker13.minimumDate = df.date(from: time121212)
     }
     
     //    MARK:DatePickerのString変換
@@ -359,20 +386,6 @@ class inputViewController: UIViewController{
             if retInterval1 > 86400 || retInterval1 < 0 || retInterval2 > 86400 || retInterval2 < 0 || retInterval3 > 86400 || retInterval3 < 0 || retInterval4 > 86400 || retInterval4 < 0 || retInterval5 > 86400 || retInterval5 < 0 || retInterval6 > 86400 || retInterval6 < 0 || retInterval7 > 86400 || retInterval7 < 0 || retInterval8 > 86400 || retInterval8 < 0 || retInterval9 > 86400 || retInterval9 < 0 || retInterval10 > 86400 || retInterval10 < 0  || retInterval11 > 86400  || retInterval11 < 0  || retInterval12 > 86400  || retInterval12 < 0  || retInterval13 > 86400 || retInterval13 < 0 {
                 print("不適切な時間です。")
                 
-                picker1(pic:retInterval1,DatePicker:DatePicker1)
-                picker1(pic:retInterval2,DatePicker:DatePicker2)
-                picker1(pic:retInterval3,DatePicker:DatePicker3)
-                picker1(pic:retInterval4,DatePicker:DatePicker4)
-                picker1(pic:retInterval5,DatePicker:DatePicker5)
-                picker1(pic:retInterval6,DatePicker:DatePicker6)
-                picker1(pic:retInterval7,DatePicker:DatePicker7)
-                picker1(pic:retInterval8,DatePicker:DatePicker8)
-                picker1(pic:retInterval9,DatePicker:DatePicker9)
-                picker1(pic:retInterval10,DatePicker:DatePicker10)
-                picker1(pic:retInterval11,DatePicker:DatePicker11)
-                picker1(pic:retInterval12,DatePicker:DatePicker12)
-                picker1(pic:retInterval13,DatePicker:DatePicker13)
-                
                 picker1(pic:retInterval1,DatePicker:DatePicker111)
                 picker1(pic:retInterval2,DatePicker:DatePicker222)
                 picker1(pic:retInterval3,DatePicker:DatePicker333)
@@ -386,8 +399,6 @@ class inputViewController: UIViewController{
                 picker1(pic:retInterval11,DatePicker:DatePicker111111)
                 picker1(pic:retInterval12,DatePicker:DatePicker121212)
                 picker1(pic:retInterval13,DatePicker:DatePicker131313)
-                
-                
             }else{
                 
                 
@@ -450,7 +461,20 @@ class inputViewController: UIViewController{
                 acquisitionTime.targetDate121212 = electData121212
                 acquisitionTime.targetDate131313 = electData131313
                 
-                
+//                データピッカーの色を全て黒にする
+                timeCollar(Picker:DatePicker111)
+                timeCollar(Picker:DatePicker222)
+                timeCollar(Picker:DatePicker333)
+                timeCollar(Picker:DatePicker444)
+                timeCollar(Picker:DatePicker555)
+                timeCollar(Picker:DatePicker666)
+                timeCollar(Picker:DatePicker777)
+                timeCollar(Picker:DatePicker888)
+                timeCollar(Picker:DatePicker999)
+                timeCollar(Picker:DatePicker101010)
+                timeCollar(Picker:DatePicker111111)
+                timeCollar(Picker:DatePicker121212)
+                timeCollar(Picker:DatePicker131313)
                 
                 
                 // 上で作成したデータをデータベースに保存します。
@@ -506,16 +530,71 @@ class inputViewController: UIViewController{
         super.didReceiveMemoryWarning()
     }
     
+    
+    
+//  MARK:   テキストを閉じる処理
+    //タイトル
+    @IBAction func end(_ sender: UITextField) {
+    }
+    //各項目 textEndBtn
+    @IBAction func end1(_ sender: UITextField) {
+    }
+    @IBAction func end2(_ sender: UITextField) {
+    }
+    @IBAction func end3(_ sender: UITextField) {
+    }
+    @IBAction func end4(_ sender: UITextField) {
+    }
+    @IBAction func end5(_ sender: UITextField) {
+    }
+    @IBAction func end6(_ sender: UITextField) {
+    }
+    @IBAction func end7(_ sender: UITextField) {
+    }
+    @IBAction func end8(_ sender: UITextField) {
+    }
+    @IBAction func end9(_ sender: UITextField) {
+    }
+    @IBAction func end10(_ sender: UITextField) {
+    }
+    @IBAction func end11(_ sender: UITextField) {
+    }
+    @IBAction func end12(_ sender: UITextField) {
+    }
+    @IBAction func end13(_ sender: UITextField) {
+    }
+    
+//    エラー表示
+    //テキストフィールドのエラー表示
     func hoge(huga:UITextField){
         if huga.text == "" {
             huga.placeholder = "文字を入力してください。"
         }
     }
     
-    
+    //デートピッカーの時間計算
     func picker1(pic:Double,DatePicker:UIDatePicker){
         if pic > 86400 || pic < 0 {
             DatePicker.setValue(UIColor.red, forKey:"textColor")
+            // アラートを作成
+            let alert = UIAlertController(
+                title: "入力された時間が間違っています。",
+                message: "赤く表示されている場所を編集してください。",
+                preferredStyle: .alert)
+            
+            // アラートにボタンをつける
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            // アラート表示
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            DatePicker.setValue(UIColor.black, forKey:"textColor")
         }
+    }
+    
+    
+    
+    func timeCollar(Picker:UIDatePicker){
+        Picker.setValue(UIColor.black, forKey:"textColor")
     }
 }

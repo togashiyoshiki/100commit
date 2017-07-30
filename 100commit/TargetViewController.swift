@@ -1,4 +1,5 @@
 import UIKit
+import CoreData
 
 class TargetViewController: UIViewController {
 
@@ -116,11 +117,140 @@ class TargetViewController: UIViewController {
         targetTime11.text = target11
         targetTime12.text = target12
         targetTime13.text = target13
+        
+        read1()
     }
-
+    
+    func read1(){
+        //        カラの変数を用意する
+        //        AooDelegateを使う用意をしておく
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        //        エンティティを操作するためのオブジェクトを作成
+        let viewContext = appDelegate.persistentContainer.viewContext
+        //        どのエンティティからデータを取得してくるか設定
+        let query:NSFetchRequest<AcquisitionTime> = AcquisitionTime.fetchRequest()
+        //         let query:NSFetchRequest<AcquisitionTime> = AcquisitionTime.fetchRequest()
+        do{
+            //        データの一括取得
+            let fetchResults = try viewContext.fetch(query)
+            //        ループで一行ずつ表示
+            for result : AnyObject in fetchResults {
+                ///nowDeta
+                var nowtime = result.value(forKey: "nowTime") as! Date
+                
+                //targetデータを取得
+                ///開始時間の取得
+                var target1 = result.value(forKey: "targetDate1") as! Date
+                var target2 = result.value(forKey: "targetDate2") as! Date
+                var target3 = result.value(forKey: "targetDate3") as! Date
+                var target4 = result.value(forKey: "targetDate4") as! Date
+                var target5 = result.value(forKey: "targetDate5") as! Date
+                var target6 = result.value(forKey: "targetDate6") as! Date
+                var target7 = result.value(forKey: "targetDate7") as! Date
+                var target8 = result.value(forKey: "targetDate8") as! Date
+                var target9 = result.value(forKey: "targetDate9") as! Date
+                var target10 = result.value(forKey: "targetDate10") as! Date
+                var target11 = result.value(forKey: "targetDate11") as! Date
+                var target12 = result.value(forKey: "targetDate12") as! Date
+                var target13 = result.value(forKey: "targetDate13") as! Date
+                
+                
+                print("取り出したい\(target1)")
+                print(target2)
+                print(target3)
+                print(target4)
+                print(target5)
+                print(target6)
+                print(target7)
+                print(target8)
+                print(target9)
+                print(target10)
+                print(target11)
+                print(target12)
+                print(target13)
+                ///終了時間の取得
+                var target111 = result.value(forKey: "targetDate111") as! Date
+                var target222 = result.value(forKey: "targetDate222") as! Date
+                var target333 = result.value(forKey: "targetDate333") as! Date
+                var target444 = result.value(forKey: "targetDate444") as! Date
+                var target555 = result.value(forKey: "targetDate555") as! Date
+                var target666 = result.value(forKey: "targetDate666") as! Date
+                var target777 = result.value(forKey: "targetDate777") as! Date
+                var target888 = result.value(forKey: "targetDate888") as! Date
+                var target999 = result.value(forKey: "targetDate999") as! Date
+                var target101010 = result.value(forKey: "targetDate101010") as! Date
+                var target111111 = result.value(forKey: "targetDate111111") as! Date
+                var target121212 = result.value(forKey: "targetDate121212") as! Date
+                var target131313 = result.value(forKey: "targetDate131313") as! Date
+                
+                
+                //            時間の計算(秒数の割り出し)
+                var retInterval1 = target111.timeIntervalSince(target1)
+                var retInterval2 = target222.timeIntervalSince(target2)
+                var retInterval3 = target333.timeIntervalSince(target3)
+                var retInterval4 = target444.timeIntervalSince(target4)
+                var retInterval5 = target555.timeIntervalSince(target5)
+                var retInterval6 = target666.timeIntervalSince(target6)
+                var retInterval7 = target777.timeIntervalSince(target7)
+                var retInterval8 = target888.timeIntervalSince(target8)
+                var retInterval9 = target999.timeIntervalSince(target9)
+                var retInterval10 = target101010.timeIntervalSince(target10)
+                var retInterval11 = target111111.timeIntervalSince(target11)
+                var retInterval12 = target121212.timeIntervalSince(target12)
+                var retInterval13 = target131313.timeIntervalSince(target13)
+                
+                
+                //            時間の計算(分の割り出し)
+                var ret1 = retInterval1/60
+                var ret2 = retInterval2/60
+                var ret3 = retInterval3/60
+                var ret4 = retInterval4/60
+                var ret5 = retInterval5/60
+                var ret6 = retInterval6/60
+                var ret7 = retInterval7/60
+                var ret8 = retInterval8/60
+                var ret9 = retInterval9/60
+                var ret10 = retInterval10/60
+                var ret11 = retInterval11/60
+                var ret12 = retInterval12/60
+                var ret13 = retInterval13/60
+                
+                //        double型をString型で文字として保存
+                var str1: String = String("\(ret1)分")
+                var str2: String = String("\(ret2)分")
+                var str3: String = String("\(ret3)分")
+                var str4: String = String("\(ret4)分")
+                var str5: String = String("\(ret5)分")
+                var str6: String = String("\(ret6)分")
+                var str7: String = String("\(ret7)分")
+                var str8: String = String("\(ret8)分")
+                var str9: String = String("\(ret9)分")
+                var str10: String = String("\(ret10)分")
+                var str11: String = String("\(ret11)分")
+                var str12: String = String("\(ret12)分")
+                var str13: String = String("\(ret13)分")
+                //                文字を表示します
+                targetTime1.text = str1
+                targetTime2.text = str2
+                targetTime3.text = str3
+                targetTime4.text = str4
+                targetTime5.text = str5
+                targetTime6.text = str6
+                targetTime7.text = str7
+                targetTime8.text = str8
+                targetTime9.text = str9
+                targetTime10.text = str10
+                targetTime11.text = str11
+                targetTime12.text = str12
+                targetTime13.text = str13
+            }
+        }catch{
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 }

@@ -11,9 +11,9 @@ import CoreData
 
 class CommitViewViewController: UIViewController {
 //MARK:メンバ変数
-    
+    ///タイトル名
     var commitName: String = ""
-    
+    ///項目名
     var item1:String = ""
     var item2:String = ""
     var item3:String = ""
@@ -28,8 +28,36 @@ class CommitViewViewController: UIViewController {
     var item12:String = ""
     var item13:String = ""
     
+    ///セレクトされた開始時間
+    var targetTime1:String = ""
+    var targetTime2:String = ""
+    var targetTime3:String = ""
+    var targetTime4:String = ""
+    var targetTime5:String = ""
+    var targetTime6:String = ""
+    var targetTime7:String = ""
+    var targetTime8:String = ""
+    var targetTime9:String = ""
+    var targetTime10:String = ""
+    var targetTime11:String = ""
+    var targetTime12:String = ""
+    var targetTime13:String = ""
     
-//        MARK:入力された項目の表示
+    ///セレクトされた終了
+    var targetTime111:String = ""
+    var targetTime222:String = ""
+    var targetTime333:String = ""
+    var targetTime444:String = ""
+    var targetTime555:String = ""
+    var targetTime666:String = ""
+    var targetTime777:String = ""
+    var targetTime888:String = ""
+    var targetTime999:String = ""
+    var targetTime101010:String = ""
+    var targetTime111111:String = ""
+    var targetTime121212:String = ""
+    var targetTime131313:String = ""
+     //        MARK:入力された項目の表示
     ///コミット名
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -82,8 +110,9 @@ class CommitViewViewController: UIViewController {
             let fetchResults = try viewContext.fetch(query)
             //        ループで一行ずつ表示
             for result : AnyObject in fetchResults {
+                ///タイトル名の取り出し
                 commitName = result.value(forKey: "commitTitle") as! String
-                
+                ///テキストデータの取り出し
                 item1 = result.value(forKey: "inputData1") as! String
                 item2 = result.value(forKey: "inputData2") as! String
                 item3 = result.value(forKey: "inputData3") as! String
@@ -122,6 +151,104 @@ class CommitViewViewController: UIViewController {
     }
     
     
+    
+    
+    
+    func read1(){
+        //        カラの変数を用意する
+        //        AooDelegateを使う用意をしておく
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        //        エンティティを操作するためのオブジェクトを作成
+        let viewContext = appDelegate.persistentContainer.viewContext
+        //        どのエンティティからデータを取得してくるか設定
+        let query:NSFetchRequest<AcquisitionTime> = AcquisitionTime.fetchRequest()
+        //         let query:NSFetchRequest<AcquisitionTime> = AcquisitionTime.fetchRequest()
+        do{
+            //        データの一括取得
+            let fetchResults = try viewContext.fetch(query)
+            //        ループで一行ずつ表示
+            for result : AnyObject in fetchResults {
+                ///nowDeta
+                var nowtime = result.value(forKey: "nowTime") as! Date
+                
+                //targetデータを取得
+                    ///開始時間の取得
+                var target1 = result.value(forKey: "targetDate1") as! Date
+                var target2 = result.value(forKey: "targetDate2") as! Date
+                var target3 = result.value(forKey: "targetDate3") as! Date
+                var target4 = result.value(forKey: "targetDate4") as! Date
+                var target5 = result.value(forKey: "targetDate5") as! Date
+                var target6 = result.value(forKey: "targetDate6") as! Date
+                var target7 = result.value(forKey: "targetDate7") as! Date
+                var target8 = result.value(forKey: "targetDate8") as! Date
+                var target9 = result.value(forKey: "targetDate9") as! Date
+                var target10 = result.value(forKey: "targetDate10") as! Date
+                var target11 = result.value(forKey: "targetDate11") as! Date
+                var target12 = result.value(forKey: "targetDate12") as! Date
+                var target13 = result.value(forKey: "targetDate13") as! Date
+                
+                
+                print(target1)
+                print(target2)
+                print(target3)
+                print(target4)
+                print(target5)
+                print(target6)
+                print(target7)
+                print(target8)
+                print(target9)
+                print(target10)
+                print(target11)
+                print(target12)
+                print(target13)
+                
+                
+                
+                    ///終了時間の取得
+                var target111 = result.value(forKey: "targetDate111") as! Date
+                var target222 = result.value(forKey: "targetDate222") as! Date
+                var target333 = result.value(forKey: "targetDate333") as! Date
+                var target444 = result.value(forKey: "targetDate444") as! Date
+                var target555 = result.value(forKey: "targetDate555") as! Date
+                var target666 = result.value(forKey: "targetDate666") as! Date
+                var target777 = result.value(forKey: "targetDate777") as! Date
+                var target888 = result.value(forKey: "targetDate888") as! Date
+                var target999 = result.value(forKey: "targetDate999") as! Date
+                var target101010 = result.value(forKey: "targetDate101010") as! Date
+                var target111111 = result.value(forKey: "targetDate111111") as! Date
+                var target121212 = result.value(forKey: "targetDate121212") as! Date
+                var target131313 = result.value(forKey: "targetDate131313") as! Date
+                
+                
+                print(target111)
+                print(target222)
+                print(target333)
+                print(target444)
+                print(target555)
+                print(target666)
+                print(target777)
+                print(target888)
+                print(target999)
+                print(target101010)
+                print(target111111)
+                print(target121212)
+                print(target131313)
+                
+
+                
+                
+            }
+            
+        }catch{
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     //MARK:戻るボタン
     @IBAction func back(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -132,6 +259,7 @@ class CommitViewViewController: UIViewController {
         super.viewDidLoad()
         
         read()
+        read1()
     }
 
     override func didReceiveMemoryWarning() {

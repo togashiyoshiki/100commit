@@ -368,7 +368,8 @@ class inputViewController: UIViewController{
         
         
         let df  = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd hh:mm:ss"
+//            ２４H表記
+        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         var electData1:NSDate = df.date(from: time1) as! NSDate
         var electData2:NSDate = df.date(from: time2) as! NSDate
         var electData3:NSDate = df.date(from: time3) as! NSDate
@@ -409,8 +410,13 @@ class inputViewController: UIViewController{
             
             //(データベースのエンティティです)型オブジェクトを代入します。
             let characterSet = CharacterSet(context: context)
+            
             ///タイトル名の保存
             characterSet.commitTitle = TextField.text
+            
+            /// 現在時刻の保存
+            characterSet.nowTime = now as NSDate
+            
             ///各項目の保存
             characterSet.inputData1 = TextField1.text
             characterSet.inputData2 = TextField2.text
@@ -479,6 +485,36 @@ class inputViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let df  = DateFormatter()
+        df.dateFormat = "HH:mm"
+        
+        DatePicker1.date  = df.date(from: "07:00")!
+        DatePicker2.date  = df.date(from: "08:00")!
+        DatePicker3.date  = df.date(from: "10:00")!
+        DatePicker4.date  = df.date(from: "12:00")!
+        DatePicker5.date  = df.date(from: "13:00")!
+        DatePicker6.date  = df.date(from: "15:00")!
+        DatePicker7.date  = df.date(from: "16:00")!
+        DatePicker8.date  = df.date(from: "17:00")!
+        DatePicker8.date  = df.date(from: "18:00")!
+        DatePicker9.date  = df.date(from: "19:00")!
+        DatePicker10.date  = df.date(from: "20:00")!
+        DatePicker11.date  = df.date(from: "21:30")!
+        DatePicker12.date  = df.date(from: "22:00")!
+        DatePicker13.date  = df.date(from: "23:00")!
+        DatePicker111.date  = df.date(from: "07:30")!
+        DatePicker222.date  = df.date(from: "08:30")!
+        DatePicker333.date  = df.date(from: "10:30")!
+        DatePicker444.date  = df.date(from: "12:30")!
+        DatePicker555.date  = df.date(from: "13:30")!
+        DatePicker666.date  = df.date(from: "15:30")!
+        DatePicker777.date  = df.date(from: "16:30")!
+        DatePicker888.date  = df.date(from: "17:30")!
+        DatePicker999.date  = df.date(from: "18:30")!
+        DatePicker101010.date  = df.date(from: "19:30")!
+        DatePicker111111.date  = df.date(from: "20:30")!
+        DatePicker121212.date  = df.date(from: "22:30")!
+        DatePicker131313.date  = df.date(from: "23:30")!
         
         
     }
